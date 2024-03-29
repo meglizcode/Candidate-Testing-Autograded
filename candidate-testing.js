@@ -8,7 +8,7 @@ let candidateName = "Name";
 let question = "Who was the first American woman in space? ";
 let correctAnswer = "Sally Ride";
 let candidateAnswer = "Answer";
-let line = "\n_________________________\n"
+let line = "\n_________________________\n";
 
 //TODO: Variables for Part 2
 let questions;
@@ -34,7 +34,7 @@ function gradeQuiz(candidateAnswers) {
 if (candidateAnswer === correctAnswer) {
   console.log("\nThat's Right! Sally Ride launched on June 18, 1983 aboard the Space Shuttle Challanger");
 } else if (candidateAnswer !== correctAnswer && candidateName === correctAnswer) {
-  console.log('\nWow "Sally" you really forgot you were the first in space?')
+  console.log('\nWow "Sally" you really forgot you were the first in space?');
 } else {
   console.log("\nSorry, that's not quite right but good try");
 }
@@ -49,10 +49,10 @@ function runProgram() {
   askForName();
   // TODO 1.1c: Greet candidate using their name //
 if (candidateName === correctAnswer) {
-  console.log("\n\n\n...Oh you're messing with my aren't you. Ok SALLY let's get to it." + line)
+  console.log("\n\n\n...Oh you're messing with my aren't you. Ok SALLY let's get to it." + line);
 } else if (candidateName.length > 0) {
    console.log('\n\n\nHello ' + candidateName + '!\nReady to get tested on some space trivia?' + line);
-} else console.log("\n\n\nRather remain anonymous yeah? Suit yourself. Ready for some space trivia?" + line)
+} else console.log("\n\n\nRather remain anonymous yeah? Suit yourself. Ready for some space trivia?" + line);
   askQuestion();
   gradeQuiz(this.candidateAnswers);
 }
